@@ -1334,15 +1334,13 @@ with st.expander("⚙️ Enhanced System Settings"):
 # Footer with enhanced information
 st.markdown("---")
 st.markdown("### 🔧 Enhanced System Information")
-col1, col2, col3, col4 = st.columns(4)
+col1, col1, col2, col3 = st.columns(3)
 with col1:
-    st.write(f"**Version:** 3.0.0 ")
-with col2:
     st.write(f"**ML Models:** {'✅ Active' if st.session_state.ml_model_trained else '❌ Training'}")
-with col3:
+with col2:
     st.write(f"**Language:** {language}")
-with col4:
+with col3:
     st.write(f"**Crop Database:** {len(crop_requirements)} crops")
 
 st.markdown("---")
-st.markdown("** Data Sources:** ICAR (Indian Council of Agricultural Research) & FAO (Food and Agriculture Organization)")
+st.markdown("*Data Sources:** ICAR (Indian Council of Agricultural Research) & FAO (Food and Agriculture Organization)")
