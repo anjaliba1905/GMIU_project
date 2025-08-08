@@ -7,3 +7,7 @@ plotly
 requests
 datetime
 google-generativeai
+joblib
+openpyxl
+
+
